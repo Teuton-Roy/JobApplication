@@ -1,8 +1,11 @@
 package com.example.JobApplication.Job;
 
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RestController;
 
 import java.util.*;
+
+@RestController
 public class JobController {
 
     //Defining job controller here...
