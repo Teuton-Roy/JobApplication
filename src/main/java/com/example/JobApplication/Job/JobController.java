@@ -1,2 +1,4 @@
-package com.example.JobApplication.Job;public class JobController {
+package com.example.JobApplication.Job;
+
+public class JobController {
 }
