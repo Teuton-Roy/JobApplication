@@ -8,3 +8,4 @@
 # 23-10-2024 ==> Today's Task...
 
 we have define an endpoints which gives us the list of jobs that exist in our application.
+Job --> JobController --> Job
