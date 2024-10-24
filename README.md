@@ -7,11 +7,9 @@
 
 # 23-10-2024 ==> Today's Task...
 
-<<<<<<< HEAD
-we have define an endpoints which gives us the list of jobs that exist in our application.
-
-# 24-10-2024 ==> Today's Task...
-=======
 we have define an endpoints which gives us the list of jobs that exist in our application.  
 Job --> JobController --> Job
->>>>>>> 1ce959b9a22c3a84dee3a7697b15a0e60cac1b2a
+
+
+# 24-10-2024 ==> Today's Task...
+
