@@ -44,4 +44,6 @@ using JSONlint create job details..
 }  
 
 Created job_service interface for loss coupling.  
-Because, have some modularity in my code-base, so I can separate the interface and the implementation. for that I created Implementation package and job_service_impl class.
+Because, have some modularity in my code-base, so I can separate the interface and the implementation. for that I created Implementation package and job_service_impl class.  
+
+* Problem_1: When I created a Job without [job_id] it take  the parameter null in job, without a job_id it need to show output error or anything else....??
