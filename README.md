@@ -42,3 +42,6 @@ using JSONlint create job details..
     "maxSalary": "45000",  
     "location": "Gurgoan"  
 }  
+
+Created job_service interface for loss coupling.  
+Because, have some modularity in my code-base, so I can separate the interface and the implementation. for that I created Implementation package and job_service_impl class.
