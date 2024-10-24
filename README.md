@@ -28,7 +28,7 @@
 
 we have define an endpoints which gives us the list of jobs that exist in our application.  
 Job --> JobController --> Job
-1. GET / jobs -> List of jobs --> Created
+1. GET / jobs -> List of jobs [GET {base url}/ jobs] --> Created
 
 # 24-10-2024 ==> Today's Task...  
 
