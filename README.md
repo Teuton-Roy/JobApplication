@@ -32,4 +32,13 @@ Job --> JobController --> Job
 
 # 24-10-2024 ==> Today's Task...  
 
-1. POST/ jobs -> Create a new job (request body should contain the job details) [POST {base url}/ jobs] --> created
+1. POST/ jobs -> Create a new job (request body should contain the job details) [POST {base url}/ jobs] --> created  
+using JSONlint create job details..  
+{  
+    "id": 1,  
+    "title": "Software Engineer 1",  
+    "description": "Test Description",  
+    "minSalary": "30000",  
+    "maxSalary": "45000",  
+    "location": "Gurgoan"  
+}  
