@@ -1,6 +1,6 @@
 package com.example.JobApplication.Job;
 
-public class job {
+public class Job {
 
     //Need to define what we need in this class, and what all info we need about the job...
 
@@ -14,7 +14,7 @@ public class job {
     private String location;
 
     //constructor
-    public job(Long id, String title, String description, String minSalary, String maxSalary, String location){
+    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location){
         this.id = id;
         this.title = title;
         this.description = description;

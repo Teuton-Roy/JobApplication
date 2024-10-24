@@ -32,3 +32,4 @@ Job --> JobController --> Job
 
 # 24-10-2024 ==> Today's Task...  
 
+1. POST/ jobs -> Create a new job (request body should contain the job details) [POST {base url}/ jobs] --> created
