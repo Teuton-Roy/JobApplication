@@ -63,3 +63,5 @@ Because, have some modularity in my code-base, so I can separate the interface a
 1. GET /jobs/{id} -> get specific job by ID [GET {base url}/ jobs/1]---> created
 
 use @PathVariable annotation which is used to extract the value from the URL.
+
+Response entity: Response entity is class in spring and it's a wrapper that represent the entire HTTP response
