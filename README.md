@@ -64,4 +64,16 @@ Because, have some modularity in my code-base, so I can separate the interface a
 
 use @PathVariable annotation which is used to extract the value from the URL.
 
-Response entity: Response entity is class in spring and it's a wrapper that represent the entire HTTP response
+Response entity: Response entity is class in spring and it's a wrapper that represent the entire HTTP response.
+
+(```
+//Get specific job by ID using ResponseEntity for batter readability and HTTP response.  
+    @GetMapping("/jobsById/{id}")  
+    public ResponseEntity<Job> getJobById(@PathVariable Long id) {  
+        Job job = jobservice.getJobById(id);  
+        if (job != null){  
+            return new ResponseEntity<>(job, HttpStatus.OK);  
+        }  
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);  
+    }  
+```)
