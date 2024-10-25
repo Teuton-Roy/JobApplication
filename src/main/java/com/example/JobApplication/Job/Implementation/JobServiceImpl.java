@@ -14,6 +14,16 @@ public class JobServiceImpl implements JobService {
                                       //Also, this will help with no duplicate job_id in my job[every I create new job, job_id will be unique].
 
     @Override
+    public Job getJobById(Long id) {
+        for(Job job: jobs){
+            if(job.getId().equals(id)) {
+                return job;
+            }
+        }
+        return null;
+    }
+
+    @Override
     public List<Job> findall() {
         return jobs;
     }

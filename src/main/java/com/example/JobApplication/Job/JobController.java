@@ -1,9 +1,6 @@
 package com.example.JobApplication.Job;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PostMapping;
-import org.springframework.web.bind.annotation.RequestBody;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -21,18 +18,29 @@ public class JobController {
         this.jobservice = jobservice;
     }
 
-    //Get list of jobs
+    //Get list of all jobs
     @GetMapping("/jobs")
     public List<Job> findAll(){ //this the endpoint we are creating here which return all the jobs
         return jobservice.findall();
     }
 
     //Create a new job
-    @PostMapping("/jobs")
+    @PostMapping("/create_jobs")
     public String CreateJob(@RequestBody Job job){
          //this the endpoint we are creating here which return all the jobs
         jobservice.createJob(job);
         return "Job added successfully";
+    }
+
+    //Get specific job by ID
+    @GetMapping("/jobsById/{id}") // {} -> dynamic, id -> variable name
+    public Job getJobById(@PathVariable Long id){
+
+        //public Job, why? Because fetching a particular job, this will return a Job Object.
+        //@PathVariable ->  this is used to extract the value from the URL.
+
+        Job job = jobservice.getJobById(id);
+        return job;
     }
 }
 
