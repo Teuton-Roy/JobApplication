@@ -7,7 +7,8 @@
 
 # List of end-points and API urls...  
 
-* All the end-points I will be building...
+### All the end-points I will be building...
+
 * GET / jobs -> List of jobs
 * GET /jobs/{id} -> get specific job by ID
 * POST/ jobs -> Create a new job (request body should contain the job details)
@@ -16,7 +17,8 @@
 * GET/ jobs/{id}/company -> Get the company details for a specific job by ID
   
 
-* Examples API URLs...
+### Examples API URLs...
+
 * GET {base url}/ jobs
 * GET {base url}/ jobs/1
 * POST {base url}/ jobs
