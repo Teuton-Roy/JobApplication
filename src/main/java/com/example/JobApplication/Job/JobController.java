@@ -22,20 +22,19 @@ public class JobController {
 
     //Get list of all jobs
     @GetMapping("/jobs")
-    public List<Job> findAll(){ //this the endpoint we are creating here which return all the jobs
-        return jobservice.findall();
+    public ResponseEntity<List<Job>> findAll(){ //this the endpoint we are creating here which return all the jobs
+        return ResponseEntity.ok(jobservice.findall());
     }
 
     //Create a new job
     @PostMapping("/create_jobs")
-    public String CreateJob(@RequestBody Job job){
+    public ResponseEntity<String> CreateJob(@RequestBody Job job){
          //this the endpoint we are creating here which return all the jobs
         jobservice.createJob(job);
-        return "Job added successfully";
+        return new ResponseEntity<>("Job Added Successfully", HttpStatus.OK);
     }
 
     //Get specific job by ID
-
 //    @GetMapping("/jobsById/{id}") // {} -> dynamic, id -> variable name
 //    public Job getJobById(@PathVariable Long id) {
 //
