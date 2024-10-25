@@ -61,3 +61,5 @@ Because, have some modularity in my code-base, so I can separate the interface a
 # 25-10-2024 ===> Today's Task...
 
 1. GET /jobs/{id} -> get specific job by ID [GET {base url}/ jobs/1]---> created
+
+use @PathVariable annotation which is used to extract the value from the URL.
