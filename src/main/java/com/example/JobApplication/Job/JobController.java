@@ -13,7 +13,7 @@ public class JobController {
 
 //    private List<Job> jobs= new ArrayList<>(); //List of jobs
 
-    private JobService jobservice;  //job_service will be available at runtime, and inject it to job_controller
+    private final JobService jobservice;  //job_service will be available at runtime, and inject it to job_controller
 
     //constructor
     public JobController(JobService jobservice) {
