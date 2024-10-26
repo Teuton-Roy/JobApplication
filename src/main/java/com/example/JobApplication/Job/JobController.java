@@ -85,9 +85,9 @@ public class JobController {
     public ResponseEntity<String> UpdateJob(@PathVariable Long id, @RequestBody Job updatedJob){
         boolean updated = jobservice.UpdateJobById(id, updatedJob);
         if(updated){
-
+            return new ResponseEntity<>("Job Updated Successfully", HttpStatus.OK);
         }
-        return
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
 
