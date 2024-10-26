@@ -79,6 +79,16 @@ public class JobController {
         }
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
+
+    //Update a specific job by ID
+    @PutMapping("/update/{id}")
+    public ResponseEntity<String> UpdateJob(@PathVariable Long id, @RequestBody Job updatedJob){
+        boolean updated = jobservice.UpdateJobById(id, updatedJob);
+        if(updated){
+
+        }
+        return
+    }
 }
 
 
