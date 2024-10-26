@@ -66,7 +66,7 @@ use @PathVariable annotation which is used to extract the value from the URL.
 
 Response entity: Response entity is class in spring and it's a wrapper that represent the entire HTTP response.
 
-(```
+
 //Get specific job by ID using ResponseEntity for batter readability and HTTP response.  
     @GetMapping("/jobsById/{id}")  
     public ResponseEntity<Job> getJobById(@PathVariable Long id) {  
@@ -76,4 +76,8 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
         }  
         return new ResponseEntity<>(HttpStatus.NOT_FOUND);  
     }  
-```)
+
+
+# 26-10-2024 ==> Today's Task...  
+
+1. DELETE /jobs/{id} -> Delete a specific job by ID [DELETE {base url}/ jobs/1] --> Created
