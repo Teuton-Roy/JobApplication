@@ -24,6 +24,11 @@ public class JobServiceImpl implements JobService {
     }
 
     @Override
+    public boolean DeleteJobById(Long id) {
+        return false;
+    }
+
+    @Override
     public List<Job> findall() {
         return jobs;
     }

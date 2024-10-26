@@ -69,9 +69,15 @@ public class JobController {
     //Delete a specific job by ID
 
     @DeleteMapping("/delete/{id}")
-    public ResponseEntity<Job> DeleteJobById(@PathVariable Long id){
-        return null;
+    public ResponseEntity<String> DeleteJob(@PathVariable Long id){
+        /* Create a boolean variable Because, I am passing the [id] to the JobService, and this will take care of the
+           deletion, if the deletion is successful it will return True if not then it will return False */
 
+        boolean deleted = jobservice.DeleteJobById(id);
+        if(deleted){
+            return new ResponseEntity<>("Job Deleted successfully", HttpStatus.OK);
+        }
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
 
