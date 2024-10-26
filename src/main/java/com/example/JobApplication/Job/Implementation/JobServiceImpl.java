@@ -57,4 +57,22 @@ public class JobServiceImpl implements JobService {
         }
         return false;
     }
+
+    //Implement UpdateJobById
+    @Override
+    public boolean UpdateJobById(Long id, Job updatedJob) {
+        for (Job job : jobs) {
+            if (job.getId().equals(id)) {
+                //Update Logic
+                //job.setId(updatedJob.getId()); not updating cause it's a unique identifier so it not suppose to update
+                job.setCompany(updatedJob.getCompany());
+                job.setDescription(updatedJob.getDescription());
+                job.setMinSalary(updatedJob.getMinSalary());
+                job.setMaxSalary(updatedJob.getMaxSalary());
+                job.setLocation(updatedJob.getLocation());
+                return true;
+            }
+        }
+        return false;
+    }
 }
