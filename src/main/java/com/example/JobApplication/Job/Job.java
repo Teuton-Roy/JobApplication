@@ -7,15 +7,20 @@ public class Job {
 
     //fields for every jobs
     private Long id; //unique id for each job
+    private String company;
     private String title;
     private String description;
     private String minSalary;
     private String maxSalary;
     private String location;
 
+
+
+
     //constructor
-    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location){
+    public Job(Long id, String title, String description, String minSalary, String maxSalary, String location, String company){
         this.id = id;
+        this.company = company;
         this.title = title;
         this.description = description;
         this.minSalary = minSalary;
@@ -71,5 +76,13 @@ public class Job {
 
     public void setLocation(String location) {
         this.location = location;
+    }
+
+    public String getCompany() {
+        return company;
+    }
+
+    public void setCompany(String company) {
+        this.company = company;
     }
 }
