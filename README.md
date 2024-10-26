@@ -4,6 +4,25 @@
 ![image](https://github.com/user-attachments/assets/7a9a148b-ebba-4a36-9538-c1df0424d000)
 ![image](https://github.com/user-attachments/assets/cbe0d895-5e8f-4673-a839-4a4b4a6d2caa)
 
+# Resquest mapping @annotation in springboot...
+
+### *Request mapping is an @annotation that is provided to us and it can used  at method level as well as class level.  
+
+## At method level we have different methods like...  
+
+1. @GetMapping
+2. @PostMapping
+3. @PutMapping
+4. @DeleteMapping
+5. @PatchMapping
+
+## At class level we have different methods like...  
+
+#### *class level: it used to set a base URL for a perticular controller like my JobController.
+
+1. @RestController
+2. @RequestMapping : means when it's applied at class level it sets a base URL path for all the   methods that are handeling request in that particular controller. [exmaple: @ResquestMapping("/jobs")]
+
 
 # List of end-points and API urls...  
 

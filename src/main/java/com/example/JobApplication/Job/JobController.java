@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.*;
 import java.util.*;
 
 @RestController
+//@RequestMapping("/jobs")
 public class JobController {
 
     //Defining job controller here...
@@ -83,7 +84,7 @@ public class JobController {
     //Update a specific job by ID
     @PutMapping("/update/{id}")
     public ResponseEntity<String> UpdateJob(@PathVariable Long id, @RequestBody Job updatedJob){
-        boolean updated = jobservice.UpdateJobById(id, updatedJob);
+        boolean updated =   jobservice.UpdateJobById(id, updatedJob);
         if(updated){
             return new ResponseEntity<>("Job Updated Successfully", HttpStatus.OK);
         }
