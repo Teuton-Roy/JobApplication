@@ -14,7 +14,7 @@
 * POST/ jobs -> Create a new job (request body should contain the job details)
 * DELETE /jobs/{id} -> Delete a specific job by ID
 * PUT /jobs/{id} -> Update a specific job by ID (request body should contain the updated job details)
-* GET/ jobs/{id}/company -> Get the company details for a specific job by ID
+
   
 
 ### Examples API URLs...
@@ -24,7 +24,7 @@
 * POST {base url}/ jobs
 * DELETE {base url}/ jobs/1
 * PUT {base url}/ jobs/1
-* GET {base url}/ jobs/1/company
+
 
 # 23-10-2024 ==> Today's Task...
 
@@ -80,4 +80,6 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 # 26-10-2024 ==> Today's Task...  
 
-1. DELETE /jobs/{id} -> Delete a specific job by ID [DELETE {base url}/ jobs/1] --> Created
+1. DELETE /jobs/{id} -> Delete a specific job by ID [DELETE {base url}/ jobs/1] --> Created 
+
+2. PUT /jobs/{id} -> Update a specific job by ID [PUT {base url}/ jobs/1] --> Created
