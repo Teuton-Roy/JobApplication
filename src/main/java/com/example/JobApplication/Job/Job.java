@@ -1,17 +1,19 @@
 package com.example.JobApplication.Job;
 
 
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import jakarta.persistence.*;
 
 @Entity                       //This @annotation tells Spring-Boot and JPA that this is the class this supposed to be mapped to a table.
-@Table(name ="Job_Table")     //Instead of having same name as class name this @Table annotation change the table name.
+//@Table(name ="Job_Table")     //Instead of having same name as class name this @Table annotation change the table name.
 public class Job {
 
     //Need to define what we need in this class, and what all info we need about the job...
 
 
     //fields for every jobs
+
+    @Id      //this annotation tells this the ID or Primary key. No need manage Primary Key so far I'm doing this by [nextId] variable.
+    @GeneratedValue(strategy = GenerationType.IDENTITY)  //Using this annotation it will be automatically managed by JPA
     private Long id; //unique id for each job
     private String company;
     private String title;
@@ -20,8 +22,12 @@ public class Job {
     private String maxSalary;
     private String location;
 
-
-
+    //Default constructor
+    public Job() {
+        /* needed because, Entities are objects that represent the data in the relational database
+           Requirement for JPA, Because JPA needs to create instances of Entity class during the retrieval of data
+           From the database.*/
+    }
 
     //constructor
     public Job(Long id, String title, String description, String minSalary, String maxSalary, String location, String company){
