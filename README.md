@@ -131,4 +131,15 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     -> Makes writting query easier
     -> Allows us to save and update objects without using DML language at all.
     -> Easy integration with Spring-Boot.
+
+## Enabling JPA by adding application properties...
+        Spring.h2.console.enabled = true
+        Spring.datasource.url = jdbc:h2:mem:test
     
+
+# H2 database [using in my project]
+
+## About:
+    -> It's a Open Source relational database written in Java and it's fast for java based applications.
+    -> It's an SQL database based on java.
+    -> 
