@@ -23,7 +23,7 @@ public class JobServiceImpl implements JobService {
         this.jobRepository = jobRepository;
     }
 
-    private long nextId = 1L;         //This variable which used to keep track of job_id that I have in my application.
+//    private long nextId = 1L;         //This variable which used to keep track of job_id that I have in my application.
                                       //Also, this will help with no duplicate job_id in my job[every I create new job, job_id will be unique].
 
 
@@ -38,7 +38,7 @@ public class JobServiceImpl implements JobService {
     //Implement create jobs
     @Override
     public void createJob(Job job) {
-        job.setId(nextId++);      //It will do is, set current id to job object then it will increment by 1.
+//        job.setId(nextId++);      //It will do is, set current id to job object then it will increment by 1.
 //        jobs.add(job);
         jobRepository.save(job);
     }
