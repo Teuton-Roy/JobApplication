@@ -2,8 +2,10 @@ package com.example.JobApplication.Job;
 
 
 import jakarta.persistence.Entity;
+import jakarta.persistence.Table;
 
 @Entity                       //This @annotation tells Spring-Boot and JPA that this is the class this supposed to be mapped to a table.
+@Table(name ="Job_Table")     //Instead of having same name as class name this @Table annotation change the table name.
 public class Job {
 
     //Need to define what we need in this class, and what all info we need about the job...
