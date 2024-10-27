@@ -102,3 +102,28 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 1. DELETE /jobs/{id} -> Delete a specific job by ID [DELETE {base url}/ jobs/1] --> Created 
 
 2. PUT /jobs/{id} -> Update a specific job by ID [PUT {base url}/ jobs/1] --> Created
+
+
+# 27-10-2024 ==> Today's Task...
+
+## what is JPA?
+    
+    I have a Job class...  
+
+    public class Job {
+    private Long id; 
+    private String company;
+    private String title;
+    private String description;
+    private String minSalary;
+    private String maxSalary;
+    private String location;
+    }
+    
+    Now I need to store the job class into a database. How I do this??  
+##    Using JPA [Java Persistence API]  
+
+    It allows us to convert object into relational table.  
+![Job class object to relational table](image-1.png)  
+
+    
