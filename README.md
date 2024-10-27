@@ -142,4 +142,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## About:
     -> It's a Open Source relational database written in Java and it's fast for java based applications.
     -> It's an SQL database based on java.
-    -> It has Embaded mode [means, runs same JVM within same application] while Server mode [means, it has running on it's own, it has accept connections from the clients over the network]
+    -> It has Embaded mode [means, runs same JVM within same application] while Server mode [means, it has running on it's own, it has accept connections from the clients over the network]sam
