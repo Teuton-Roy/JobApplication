@@ -1,12 +1,7 @@
 package com.example.JobApplication.company;
 import com.example.JobApplication.Job.Job;
-
-import jakarta.persistence.*;
-import org.springframework.boot.autoconfigure.web.WebProperties;
-
-import javax.persistence.GenerationType;
+import jakarta.persistence   .*;
 import java.util.List;
-
 
 @Entity
 public class Company {

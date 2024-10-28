@@ -99,7 +99,6 @@ public class JobServiceImpl implements JobService {
         if (jobOptional.isPresent()) {
             Job job = jobOptional.get();
             //Update Logic
-            job.setCompany(updatedJob.getCompany());
             job.setDescription(updatedJob.getDescription());
             job.setMinSalary(updatedJob.getMinSalary());
             job.setMaxSalary(updatedJob.getMaxSalary());
