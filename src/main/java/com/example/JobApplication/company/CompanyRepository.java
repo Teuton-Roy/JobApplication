@@ -1,2 +1,4 @@
-package com.example.JobApplication.company;public class CompanyRepository {
+package com.example.JobApplication.company;
+
+public interface CompanyRepository {
 }

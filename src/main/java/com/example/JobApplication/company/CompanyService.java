@@ -1,2 +1,4 @@
-package com.example.JobApplication.company;public class CompanyService {
+package com.example.JobApplication.company;
+
+public class CompanyService {
 }
