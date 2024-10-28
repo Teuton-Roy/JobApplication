@@ -6,5 +6,7 @@ public interface CompanyService {
 
     //Define methods here...
     List<Company> getallCompanies();
+    void createCompany(Company company);
     boolean updateCompany(Company company, Long id);
+
 }

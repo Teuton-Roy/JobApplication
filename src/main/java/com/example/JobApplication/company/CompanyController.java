@@ -20,8 +20,15 @@ public class CompanyController {
 
     //Get all the companies
     @GetMapping
-    public List<Company> getAllCompanies(){
-        return companyService.getallCompanies();
+    public ResponseEntity<List<Company>> getAllCompanies(){
+        return new ResponseEntity<>(companyService.getallCompanies(), HttpStatus.OK);
+    }
+
+    //Create a new company
+    @PostMapping
+    public ResponseEntity<String> addCompany(@RequestBody Company company){
+        companyService.createCompany(company);
+        return new ResponseEntity<>("Company added successfully", HttpStatus.CREATED);
     }
 
     //Update a specific company by ID
@@ -30,4 +37,5 @@ public class CompanyController {
         companyService.updateCompany(company, id);
         return new ResponseEntity<>("Company updated successfully", HttpStatus.OK);
     }
+
 }
