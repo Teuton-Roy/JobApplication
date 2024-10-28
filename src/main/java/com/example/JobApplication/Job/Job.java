@@ -15,7 +15,6 @@ public class Job {
     @Id      //this annotation tells this the ID or Primary key. No need manage Primary Key so far I'm doing this by [nextId] variable.
     @GeneratedValue(strategy = GenerationType.IDENTITY)  //Using this annotation it will be automatically managed by JPA
     private Long id; //unique id for each job
-    private String company;
     private String title;
     private String description;
     private String minSalary;
@@ -32,7 +31,6 @@ public class Job {
     //constructor
     public Job(Long id, String title, String description, String minSalary, String maxSalary, String location, String company){
         this.id = id;
-        this.company = company;
         this.title = title;
         this.description = description;
         this.minSalary = minSalary;
@@ -88,13 +86,5 @@ public class Job {
 
     public void setLocation(String location) {
         this.location = location;
-    }
-
-    public String getCompany() {
-        return company;
-    }
-
-    public void setCompany(String company) {
-        this.company = company;
     }
 }
