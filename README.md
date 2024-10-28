@@ -157,3 +157,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 1. GET /companies -> get all the companies --> created
 2. PUT /companies/{id} -> update a specific company by ID
+3. POST /companies -> create a new company
