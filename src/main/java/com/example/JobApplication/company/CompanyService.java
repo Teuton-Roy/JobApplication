@@ -4,6 +4,7 @@ import java.util.*;
 
 public interface CompanyService {
 
-    //Define methods...
+    //Define methods here...
     List<Company> getallCompanies();
+    boolean updateCompany(Company company, Long id);
 }

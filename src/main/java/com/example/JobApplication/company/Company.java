@@ -1,6 +1,6 @@
 package com.example.JobApplication.company;
 import com.example.JobApplication.Job.Job;
-import jakarta.persistence   .*;
+import jakarta.persistence.*;
 import java.util.List;
 
 @Entity
@@ -14,17 +14,18 @@ public class Company {
     private String name;
     private String description;
 
+    //map every company to list of jobs
+    @OneToMany //this indicates that one company has many jobs opening
+    private List<Job> jobs;
+    //private List<Review> reviews; later on...
+
 
     //Constructor
     public Company() {
 
     }
 
-    //map every company to list of jobs
-    @OneToMany //this indicates that one company has many jobs opening
-    private List<Job> jobs;
-    //private List<Review> reviews; later on...
-
+    //Getter and Setter
     public Long getId() {
         return id;
     }
@@ -47,5 +48,13 @@ public class Company {
 
     public void setDescription(String description) {
         this.description = description;
+    }
+
+    public List<Job> getJobs() {
+        return jobs;
+    }
+
+    public void setJobs(List<Job> jobs) {
+        this.jobs = jobs;
     }
 }

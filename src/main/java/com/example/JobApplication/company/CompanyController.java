@@ -1,8 +1,8 @@
 package com.example.JobApplication.company;
 
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.http.HttpStatus;
+import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.*;
 
@@ -24,5 +24,10 @@ public class CompanyController {
         return companyService.getallCompanies();
     }
 
-
+    //Update a specific company by ID
+    @PutMapping("/update/{id}")
+    public ResponseEntity<String> updateCompany(@PathVariable Long id, @RequestBody Company company){
+        companyService.updateCompany(company, id);
+        return new ResponseEntity<>("Company updated successfully", HttpStatus.OK);
+    }
 }
