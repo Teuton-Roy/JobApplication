@@ -150,7 +150,8 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 # 28-10-2024 ==> Today's Task...
 
-    ```Start With Company```
+    ```Start With Companies & Reviews```
 
 ![Company](image-2.png)
+![reviews associated with company](image-3.png)
 
