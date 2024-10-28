@@ -110,6 +110,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     
     I have a Job class...  
 
+    
     public class Job {
     private Long id; 
     private String company;
@@ -120,6 +121,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     private String location;
     }
     
+
     Now I need to store the job class into a database. How I do this??  
 ##    Using JPA [Java Persistence API]  
 
@@ -143,3 +145,10 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     -> It's a Open Source relational database written in Java and it's fast for java based applications.
     -> It's an SQL database based on java.
     -> It has Embaded mode [means, runs same JVM within same application] while Server mode [means, it has running on it's own, it has accept connections from the clients over the network]
+
+```Done with Job_Controller, Job_Service, Job_Repository.```
+
+# 28-10-2024 ==> Today's Task...
+
+    ```Start With Company```
+
