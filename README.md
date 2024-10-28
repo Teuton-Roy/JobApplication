@@ -155,3 +155,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ![Company](image-2.png)
 ![reviews associated with company](image-3.png)
 
+1. GET /companies -> get all the companies --> created
