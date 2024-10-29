@@ -161,3 +161,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 # 29-10-2024 ==> Today's Task...
 
+1. DELETE /companies/{id} -> delete a specific company by ID
