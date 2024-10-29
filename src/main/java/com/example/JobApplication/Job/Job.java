@@ -1,6 +1,7 @@
 package com.example.JobApplication.Job;
 
 
+import com.example.JobApplication.company.Company;
 import jakarta.persistence.*;
 
 @Entity                       //This @annotation tells Spring-Boot and JPA that this is the class this supposed to be mapped to a table.
@@ -20,6 +21,10 @@ public class Job {
     private String minSalary;
     private String maxSalary;
     private String location;
+
+    //define the relationship between Job and Company...
+    @OneToMany
+    private Company company;
 
     //Default constructor
     public Job() {
