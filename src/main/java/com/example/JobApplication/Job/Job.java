@@ -23,7 +23,7 @@ public class Job {
     private String location;
 
     //define the relationship between Job and Company...
-    @OneToMany
+    @ManyToOne //many job s can be associated with one company
     private Company company;
 
     //Default constructor
