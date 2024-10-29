@@ -15,8 +15,12 @@ public class Company {
     private String description;
 
     //map every company to list of jobs
-    @OneToMany //this indicates that one company has many jobs opening
+    @OneToMany(mappedBy = "company") //this indicates that one company has many jobs opening
+    /* @OneToMany(mappedBy = "company") this tells is this particular relationship that exist company to that of job is
+    * mapped by a field called company which exist in JOB*/
     private List<Job> jobs;
+
+
     //private List<Review> reviews; later on...
 
 

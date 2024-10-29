@@ -1,4 +1,4 @@
-package com.example.JobApplication.Job; 
+package com.example.JobApplication.Job;
 import com.example.JobApplication.company.Company;
 import jakarta.persistence.*;
 
