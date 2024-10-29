@@ -7,8 +7,6 @@ import jakarta.persistence.*;
 public class Job {
 
     //Need to define what we need in this class, and what all info we need about the job...
-
-
     //fields for every jobs
 
     @Id      //this annotation tells this the ID or Primary key. No need manage Primary Key so far I'm doing this by [nextId] variable.
