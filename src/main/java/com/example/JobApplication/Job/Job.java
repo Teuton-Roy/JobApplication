@@ -1,6 +1,4 @@
-package com.example.JobApplication.Job;
-
-
+package com.example.JobApplication.Job; 
 import com.example.JobApplication.company.Company;
 import jakarta.persistence.*;
 
@@ -25,6 +23,7 @@ public class Job {
     //define the relationship between Job and Company...
     @ManyToOne //many job s can be associated with one company
     private Company company;
+
 
     //Default constructor
     public Job() {
