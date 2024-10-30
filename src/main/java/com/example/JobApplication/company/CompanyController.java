@@ -55,6 +55,6 @@ public class CompanyController {
         if (company != null){
             return new ResponseEntity<>(company, HttpStatus.OK);
         }
-        return new ResponseEntity<>(HttpStatus.NOT_FOUND);g
+        return new ResponseEntity<>(HttpStatus.NOT_FOUND);
     }
 }
