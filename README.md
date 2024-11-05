@@ -150,10 +150,9 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 # 28-10-2024 ==> Today's Task...
 
-    ```Start With Companies & Reviews```
+``` Start With Companies```
 
 ![Company](image-2.png)
-![reviews associated with company](image-3.png)
 
 1. GET /companies -> get all the companies --> created
 2. PUT /companies/{id} -> update a specific company by ID
@@ -166,3 +165,11 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 # 30-10-2024 ==> Today's Task...
 
 1. GET /companies/{id} -> get a specific company by ID
+
+## Diwali 🎆🎇
+
+# 5-11-2024 ==> Today's Task...
+
+``` Start With Reviews ```
+
+![reviews associated with company](image-3.png)
