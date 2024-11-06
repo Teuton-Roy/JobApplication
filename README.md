@@ -173,3 +173,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ``` Start With Reviews ```
 
 ![reviews associated with company](image-3.png)
+
+// 6-11-2024 ==> Today's Task...
+
+1. GET /companies/{companyId}/reviews 
