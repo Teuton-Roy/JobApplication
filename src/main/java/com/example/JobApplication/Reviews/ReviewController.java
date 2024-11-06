@@ -1,11 +1,9 @@
 package com.example.JobApplication.Reviews;
 
 
+import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
-import org.springframework.web.bind.annotation.GetMapping;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
 
@@ -19,9 +17,16 @@ public class ReviewController {
     }
 
     /*add a method to get all reviews for a company*/
-
     @GetMapping("/reviews")
-    public ResponseEntity<List<Review>> getAllReviews(@PathVariable Long id){
-        return ResponseEntity.ok(reviewService.getAllReviews(id));
+    public ResponseEntity<List<Review>> getAllReviews(@PathVariable Long companyId){
+        return new ResponseEntity<>(reviewService.getAllReviews(companyId),
+                HttpStatus.OK);
+    }
+
+    /*Create method*/
+    @PostMapping("/createReviews")
+    public ResponseEntity<String> addReview(@PathVariable Long companyId, @RequestBody Review review){
+        reviewService.addReview(companyId, review);
+        return new ResponseEntity<>("Review added successfully", HttpStatus.OK);
     }
 }
