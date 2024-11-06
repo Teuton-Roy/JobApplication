@@ -1,5 +1,6 @@
 package com.example.JobApplication.company;
 import com.example.JobApplication.Job.Job;
+import com.example.JobApplication.Reviews.Review;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import jakarta.persistence.*;
 import java.util.List;
@@ -23,7 +24,9 @@ public class Company {
     private List<Job> jobs;
 
 
-    //private List<Review> reviews; later on...
+    //Link to Review
+    @OneToMany(mappedBy = "company")
+    private List<Review> reviews; //Relationship between company and review
 
 
     //Constructor
@@ -32,6 +35,14 @@ public class Company {
     }
 
     //Getter and Setter
+    public List<Review> getReviews() {
+        return reviews;
+    }
+
+    public void setReviews(List<Review> reviews) {
+        this.reviews = reviews;
+    }
+
     public Long getId() {
         return id;
     }
