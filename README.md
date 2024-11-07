@@ -181,6 +181,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 # 7-11-2024 ==> Today's Task...
 
-``` *Challenge-2: How the review is manage if the compnay doesn't exit? ```  
+1. ``` *Challenge-2: How the review is manage if the compnay doesn't exit? ```  
 ``` To handel the make [addReview] return type boolean (ReviewService.java)```
 
+2. GET /companies/{companyId}/reviews/{reviewsId}  --> get a specific review for a specific company  
