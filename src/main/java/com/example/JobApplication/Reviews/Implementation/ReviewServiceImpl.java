@@ -37,5 +37,15 @@ public class ReviewServiceImpl implements ReviewService {
         return false;
     }
 
+    @Override
+    public Review getReview(Long companyId, Long reviewId) {
+        //Logic: call the getAllReviews() and get all the reviews in table, then filter it by companyId.
+        List<Review> reviews = reviewRepository.findByCompanyId(companyId);
+        return reviews.stream() //converting this list into a stream for filtering purpose
+                .filter(review -> review.getId().equals(reviewId)) //apply the filter on stream where I specify the condition as review.getId().equals(reviewId)
+                .findFirst() //getting the first_one from the filtered stream
+                .orElse(null); // null means when there is no object found
+    }
+
 
 }
