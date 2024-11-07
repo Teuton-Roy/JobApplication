@@ -26,7 +26,14 @@ public class ReviewController {
     /*Create method*/
     @PostMapping("/createReviews")
     public ResponseEntity<String> addReview(@PathVariable Long companyId, @RequestBody Review review){
-        reviewService.addReview(companyId, review);
-        return new ResponseEntity<>("Review added successfully", HttpStatus.OK);
+//      reviewService.addReview(companyId, review);
+//      return new ResponseEntity<>("Review added successfully", HttpStatus.OK);
+//      logic for, review is manage if the company doesn't exit  
+
+        boolean isReviewSaved = reviewService.addReview(companyId, review);
+        if (isReviewSaved) {
+            return new ResponseEntity<>("Review added successfully", HttpStatus.OK);
+        }
+        return new ResponseEntity<>("Review not saved!",HttpStatus.NOT_FOUND);
     }
 }

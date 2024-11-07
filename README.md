@@ -68,13 +68,13 @@ using JSONlint create job details..
 Because, have some modularity in my code-base, so I can separate the interface and the implementation. for that I created Implementation package and job_service_impl class.  
 
 
-3. * Problem_1: When I created a Job without [job_id] it take  the parameter null in job, without a job_id it need to show output error or anything else....??
+```3. * Problem_1: When I created a Job without [job_id] it take  the parameter null in job, without a job_id it need to show output error or anything else....??```
 
-* Solution: 
-1. Create a class variable called [nextId].  
+```* Solution:  ``` 
+```1. Create a class variable called [nextId].  ```
 
-2. This variable which used to keep track of job_id that I have in my application. And, it will do is, set current id to job object then it will increment by 1.
-3. Also, this will help with no duplicate job_id in my job[every I create new job, job_id will be unique].
+```2. This variable which used to keep track of job_id that I have in my application. And, it will do is, set current id to job object then it will increment by 1.```
+```3. Also, this will help with no duplicate job_id in my job[every I create new job, job_id will be unique].```
 
 
 # 25-10-2024 ===> Today's Task...
@@ -174,7 +174,13 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 ![reviews associated with company](image-3.png)
 
-// 6-11-2024 ==> Today's Task...
+# 6-11-2024 ==> Today's Task...
 
 1. GET /companies/{companyId}/reviews 
 2. POST /companies/{companyId}/createReviews
+
+# 7-11-2024 ==> Today's Task...
+
+``` *Challenge-2: How the review is manage if the compnay doesn't exit? ```  
+``` To handel the make [addReview] return type boolean (ReviewService.java)```
+
