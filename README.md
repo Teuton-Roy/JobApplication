@@ -189,4 +189,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 # 8-11-2024 ==> Today's Task...
 
 1. PUT /companies/{companyId}/reviews/{reviewsId} --> to update a particular review
- 
+2. DELETE /companies/{companyId}/reviews/{reviewId}
