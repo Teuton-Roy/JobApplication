@@ -10,7 +10,7 @@ import java.util.List;
 @RestController
 @RequestMapping("/companies/{companyId}")
 public class ReviewController {
-    private ReviewService reviewService;
+    private final ReviewService reviewService;
 
     public ReviewController(ReviewService reviewService) {
         this.reviewService = reviewService;
@@ -41,5 +41,15 @@ public class ReviewController {
     @GetMapping("/reviews/{reviewId}")
     public ResponseEntity<Review> getReview(@PathVariable Long companyId, @PathVariable Long reviewId){
         return new ResponseEntity<>(reviewService.getReview(companyId, reviewId), HttpStatus.OK);
+    }
+
+    /*add a method to update a specific review for a specific company*/
+    @PutMapping("/updateReviews/{reviewId}")
+    public ResponseEntity<String> updateReview(@PathVariable Long companyId, @PathVariable Long reviewId, @RequestBody Review review){
+        boolean isReviewUpdated = reviewService.updateReview(companyId, reviewId, review);
+        if(isReviewUpdated) {
+            return new ResponseEntity<>("Review updated successfully", HttpStatus.OK);
+        }
+        return new ResponseEntity<>("Review not updated!", HttpStatus.NOT_FOUND);
     }
 }

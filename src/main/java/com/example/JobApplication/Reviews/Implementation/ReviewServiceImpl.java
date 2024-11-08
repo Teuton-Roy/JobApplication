@@ -47,5 +47,14 @@ public class ReviewServiceImpl implements ReviewService {
                 .orElse(null); // null means when there is no object found
     }
 
-
+    @Override
+    public boolean updateReview(Long companyId, Long reviewId, Review updatedReview) {
+        if(companyService.getCompanyById(companyId) != null){
+            updatedReview.setCompany(companyService.getCompanyById(companyId));
+            updatedReview.setId(reviewId);
+            reviewRepository.save(updatedReview);
+            return true;
+        }
+        return false;
+    }
 }
