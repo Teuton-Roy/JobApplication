@@ -185,3 +185,8 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ``` To handel the make [addReview] return type boolean (ReviewService.java)```
 
 2. GET /companies/{companyId}/reviews/{reviewsId}  --> get a specific review for a specific company  
+
+# 8-11-2024 ==> Today's Task...
+
+1. PUT /companies/{companyId}/reviews/{reviewsId} --> to update a particular review
+ 
