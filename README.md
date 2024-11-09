@@ -200,3 +200,6 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ### It's gives us insight about running application as to what is happening with it.
 
 ![Importance](image-5.png)
+
+## Actuators endpoints
+![endpoints](image-6.png)
