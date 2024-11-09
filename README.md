@@ -190,3 +190,13 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 1. PUT /companies/{companyId}/reviews/{reviewsId} --> to update a particular review
 2. DELETE /companies/{companyId}/reviews/{reviewId}
+
+# 9-11-2025 == Today's Task...
+
+## Spring-Boot Actuators
+
+![What is actuators](image-4.png)
+### besically it's an interface or a tool by using this we can monitor our application.
+### It's gives us insight about running application as to what is happening with it.
+
+![Importance](image-5.png)
