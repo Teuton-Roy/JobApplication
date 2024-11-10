@@ -203,3 +203,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 ## Actuators endpoints
 ![endpoints](image-6.png)
+
