@@ -229,3 +229,5 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## Docker images:
     These are tamplates with instructions for creating something called as Docker Container.  
     Blueprint for creating a container.  
+## Docker Registry:
+    It is a service that stores docker images, which can be public and private.
