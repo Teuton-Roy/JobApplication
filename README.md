@@ -215,3 +215,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ``` Containerization: It's a lightweight virtualization technology that enable us to package an application along with it's dependencies   into a standard unit which is called a container ```  
 ``` With docker I can create containers that have everything that is needed for an application to run this can includes  the code, the runtime, the libraries, even the system tools ```  
 ``` This containers are portable means we can move them accross the system and can be deployed on any system that has docker running```  
+![Container](image-10.png)
