@@ -232,3 +232,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ![image, container](image-12.png)
 ## Docker Registry:
     It is a service that stores docker images, which can be public and private.
+## Docker Engine:
+    This is the runtime that manages the containers and it provides all the neccessary tools that we will need to build, run, manage docker container.
+## Dockerfile:
+    It's a file that contains instructions to build a docker image.
