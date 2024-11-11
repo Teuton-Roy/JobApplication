@@ -204,3 +204,12 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## Actuators endpoints
 ![endpoints](image-6.png)
 
+# 11-11-2024 ==> Today's Task...
+
+## Docker With SpringBoot
+
+![Why we need Dockers](image-7.png)
+![containter](image-8.png)
+![Docker](image-9.png)
+
+``` Containerization: It's a lightweight virtualization technology that enable us to package an application along with it's dependencies   into a standard unit which is called a container ```
