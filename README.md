@@ -223,4 +223,8 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## Docker CLI: 
     Command Line interface it's a clinents that allows users to interact with docker.  Docker CLI interact with Docker Deamon to get those commnand exicuted.  
 ## Docker Deamon:
-     It's runs on host os, resposible for building docker images, and managing docker containers.  Interact with docker-API and it manages all docker images.
+    It's runs on host os, resposible for building docker images, and managing docker containers.  Interact with docker-API and it manages all docker images.  
+## Docker images:
+    These are tamplates with instructions for creating something called as Docker Container.  
+    Blueprint for creating a container.  
+    
