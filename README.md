@@ -279,4 +279,31 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     -Dspring-boot.build-image.imageName=<IMAGE-NAME>: Java System property that is being passed to springboot
     build image goal
     
-    
+## So there will be a few problem when we containerize our application if our sdk version and Maven version not matched.
+    [ERROR] Failed to execute goal org.springframework.boot:spring-boot-maven-plugin:3.3.4:build-image (default-cli) on project JobApplication: Execution default-cli of goal org.springframework.boot:spring-boot-maven-plugin:3.3.4:build-image failed: Builder lifecycle 'creator' failed with status code 51 -> [Help 1]
+
+### ``` How to solve this problem? ```
+
+    <plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+				<configuration>
+					<image>
+						<env>
+							<BP_JVM_VERSION>${java.version}</BP_JVM_VERSION>
+						</env>
+					</image>
+				</configuration>
+			</plugin>
+	</plugins>
+
+    use this configuration [stackoverflow answer]
+
+    <configuration>
+		<image>
+			<env>
+				<BP_JVM_VERSION>${java.version}</BP_JVM_VERSION>
+			</env>
+		</image>
+	</configuration>
