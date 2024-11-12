@@ -237,3 +237,12 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     that we will need to build, run, manage docker container.
 ## Dockerfile:
     It's a file that contains instructions to build a docker image.
+
+# Containerizing My SpringBoot Application
+
+## Example Files
+    FROM openjdk:11 // use official openjdk-11 image from dockerhub
+    VOLUME /temp // create a mount point with the specific path and it marks it as holding externally mounted volumes. creating volume with name temp.
+    ADD target/my-app.jar my-app.jar // add the jar file of application from target directory to docker image and naming it my-app.jar
+    EXPOSE 8080 // EXPOSE 8080 port to the host machine which will allow us to access this application from our system.
+    ENTRYPOINT ["java","-jar","/my-app.jar"] // It tells the docker what command to run when the container start.
