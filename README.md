@@ -262,5 +262,10 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     into the image for this application to be dockerize that is based on all the dependencies present in pom.xml file.
     that's the benifit of using springboot with docker.
 
+## ``` How does process work? ```
+    Spring Boot internally uses [Cloud Native Buildpacks] to create a docker image without the need of a dockerfile.
+### Cloud Native Buildpacks:
+    specification created by cloud nating computing foundation(CNCF) which is design to container from the Source code
+    without a need of dockerfile.
     
     
