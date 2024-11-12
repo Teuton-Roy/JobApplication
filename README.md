@@ -266,9 +266,17 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     1. Spring Boot internally uses [Cloud Native Buildpacks] to create a docker image without the need of a dockerfile.
     2. SpringBoot Maven plugin
     3. Layering
-    
+
 ### Cloud Native Buildpacks:
     specification created by cloud nating computing foundation(CNCF) which is design to create container image from the Source code
     without a need of dockerfile.
+
+## ``` Command for containerizing ```
+    ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=<IMAGE-NAME>
+
+    ./mvnw: about Maven wrapper 
+    spring-boot:build-image: which is the Maven goal that is build the docker image from the application using cloud Native Buildpacks
+    -Dspring-boot.build-image.imageName=<IMAGE-NAME>: Java System property that is being passed to springboot
+    build image goal
     
     
