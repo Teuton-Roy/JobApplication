@@ -272,7 +272,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     without a need of dockerfile.
 
 ## ``` Command for containerizing ```
-    ./mvnw spring-boot:build-image -Dspring-boot.build-image.imageName=<IMAGE-NAME>
+    ./mvnw spring-boot:build-image "-Dspring-boot.build-image.imageName=<IMAGE-NAME>"
 
     ./mvnw: about Maven wrapper 
     spring-boot:build-image: which is the Maven goal that is build the docker image from the application using cloud Native Buildpacks
