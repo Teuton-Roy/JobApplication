@@ -310,5 +310,35 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 ## Push docker image to docker hub
     Command:
-    docker push <profile_name/image_name>
-    docker push popeyehk404/jobfindimage
+    Syntax: docker push <profile_name/image_name>
+            docker push popeyehk404/jobfindimage
+
+# Docker Commands
+    1. --> docker pull <image_name> //used to pull docker image from docker hub/repository
+    
+    2. --> docker push <profile_name/image_name> //used to push the docker image to docker hub
+    
+    3. --> docker run -it -d -p <host-port>:<container-port> --name <username><image_name> //[it = interactive, d = detach mode, p = port mapping] used to run docker container from the image
+    
+    4. --> docker stop <container-id/container-name> //used to stop running container
+    
+    5. --> docker start <container-id/container-name> //used to start container
+    
+    6. --> docker rm <container-id/container-name> //used to remove stopped/delete container 
+    
+    7. --> docker rmi <image-id/image-name> //used to remove a image from local storage
+    
+    8. --> docker ps //used to get running container info
+    
+    9. --> docker ps -a //used to show all the containers which are running as well as stopped
+    
+    10. --> docker images //used to list all images on host
+    
+    11. --> docker exec -it <container-name/container-id> bash //used to access a  running container
+    
+    12. --> docker build -t <username/image-name> . //used build an image from dockerfile
+    
+    13. --> docker logs <container-id/container-name> //used to get the logs of a particular container that is running
+    
+    14. --> docker inspect <container-id/container-name> //used to get details info of a particular container
+
