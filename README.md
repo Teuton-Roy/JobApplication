@@ -361,3 +361,12 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     
     4. Durability: Best choice production grad invironments deu to its
                    durability while H2 is the best choice for development and testing purpose 
+
+### PostgreSQL Database configuration setting so work with PostgreSQL
+    spring.datasource.url=jdbc:postgresql://localhost:5432//jobapp
+    spring.datasource.username=root
+    spring.datasource.password=root1234
+    spring.jpa.database=POSTGRESQL
+    spring.jpa.show-sql=true
+    spring.jpa.hibernate.ddl-auto=create-drop
+    spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
