@@ -265,7 +265,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## ``` How does process work? ```
     Spring Boot internally uses [Cloud Native Buildpacks] to create a docker image without the need of a dockerfile.
 ### Cloud Native Buildpacks:
-    specification created by cloud nating computing foundation(CNCF) which is design to container from the Source code
+    specification created by cloud nating computing foundation(CNCF) which is design to create container image from the Source code
     without a need of dockerfile.
     
     
