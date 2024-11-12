@@ -246,3 +246,21 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     ADD target/my-app.jar my-app.jar // add the jar file of application from target directory to docker image and naming it my-app.jar
     EXPOSE 8080 // EXPOSE 8080 port to the host machine which will allow us to access this application from our system.
     ENTRYPOINT ["java","-jar","/my-app.jar"] // It tells the docker what command to run when the container start.
+
+## ``` With SpringBoot we don't need to define a docker file  ```  
+    Because we use [Maven plug-in] from pom.xml file
+    
+    <build>
+		<plugins>
+			<plugin>
+				<groupId>org.springframework.boot</groupId>
+				<artifactId>spring-boot-maven-plugin</artifactId>
+			</plugin>
+		</plugins>
+	</build>
+    Docker autometically knows and understand with the help of this plug-in as what all needs to be included,
+    into the image for this application to be dockerize that is based on all the dependencies present in pom.xml file.
+    that's the benifit of using springboot with docker.
+
+    
+    
