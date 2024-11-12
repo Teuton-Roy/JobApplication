@@ -370,3 +370,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     spring.jpa.show-sql=true
     spring.jpa.hibernate.ddl-auto=create-drop
     spring.jpa.database-platform=org.hibernate.dialect.PostgreSQLDialect
+
+    jdbc:postgresql: means using PostgreSQL database
+    localhost:5432: running on localhost at 5432 port which default for PostgreSQL
+    jobapp: Database name
