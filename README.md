@@ -342,3 +342,22 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     
     14. --> docker inspect <container-id/container-name> //used to get details info of a particular container
 
+# ``` PostgreSQL ```
+
+## ```What is PostgreSQL?```
+![PostgreSQL](image-13.png)
+### ``` Why I use it over H2 ```
+    H2 is very capable database and has advantage of being embadded in JAVA.
+    However when it comes to build large application PostgraSQL has lots of advantages.
+#### ```Advantages ```
+    1. Scalability: It really scalable and it enables us to work with high
+                    volumn of data and support lots of concurrent users.
+    
+    2. Feature Set: PostgraSQL has high feature sets as compare to H2 and it
+                    supports SQL standard data types and functions
+    
+    3. Ecosystem and Tools: PostgraSQL has vary broad ecosystem, wide range 
+                            of GUI tools like graphical user interface, libraries, third party support, community support etc.
+    
+    4. Durability: Best choice production grad invironments deu to its
+                   durability while H2 is the best choice for development and testing purpose 
