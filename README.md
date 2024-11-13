@@ -366,8 +366,8 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
                    durability while H2 is the best choice for development and testing purpose 
 
 ### PostgreSQL Database configuration setting so work with PostgreSQL
-    spring.datasource.url=jdbc:postgresql://localhost:5432//jobapp
-    spring.datasource.username=root
+    spring.datasource.url=jdbc:postgresql://localhost:5432/jobapp
+    spring.datasource.username=postgres
     spring.datasource.password=root1234
     spring.jpa.database=POSTGRESQL
     spring.jpa.show-sql=true
@@ -385,3 +385,5 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     
     PgAdmin:
         docker run -d --name pdadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=root dpage/pgadmin4
+
+### 
