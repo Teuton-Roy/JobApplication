@@ -378,3 +378,10 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     localhost:5432: running on localhost at 5432 port which default for PostgreSQL
     jobapp: Database name
 
+## ``` Using postgreSql and pgadmin using docker ```
+    Command to use:
+    PostgreSQL:
+         docker run -d --name db -e POSTGRESQL_PASSWORD=root postgres
+    
+    PgAdmin:
+        
