@@ -379,6 +379,15 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     jobapp: Database name
 
 ## ``` Using postgreSql and pgadmin using docker ```
+
+    First we need to create docker network...
+    command:
+        docker network create <my-network_name>
+
+        docker run -d --name db --network <my-network_name> -e POSTGRES_PASSWORD=root1234 postgres
+
+        docker run -d --name pgadmin --network <my-network_name> -e PGADMIN_DEFAULT_EMAIL=user@domain.com -e PGADMIN_DEFAULT_PASSWORD=root dpage/pgadmin4
+
     Command to use:
     PostgreSQL:
          docker run -d --name db -e POSTGRES_PASSWORD=root1234 postgres
