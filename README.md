@@ -333,7 +333,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     
     8. --> docker ps //used to get running container info
     
-    9. --> docker ps -a //used to show all the containers which are running as well as stopped
+    9. --> docker ps -a //used to show all the containers which are running / as well as stopped
     
     10. --> docker images //used to list all images on host
     
