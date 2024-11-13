@@ -431,3 +431,25 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     postgres [docker image name]
 
     this are the parameters we should use to run postgresql...
+
+## ```Start the pgAdmin service:```
+
+    docker run -d \
+
+    --name pgadmin_container \
+
+    -e PGADMIN_DEFAULT_EMAIL=pgadmin4@pgadmin.org \
+
+    -e PGADMIN_DEFAULT_PASSWORD=root \ 
+    
+    -e PGADMIN_CONFIG_SERVER_MODE=False \
+
+    -v pgadmin:/var/lib/pgadmin \
+
+    -p 5050:80\
+
+    --network postgres \
+
+    --restart unless-stopped \
+
+    dpage/pgadmin4
