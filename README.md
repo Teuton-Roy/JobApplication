@@ -381,7 +381,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## ``` Using postgreSql and pgadmin using docker ```
     Command to use:
     PostgreSQL:
-         docker run -d --name db -e POSTGRESQL_PASSWORD=root postgres
+         docker run -d --name db -e POSTGRES_PASSWORD=root1234 postgres
     
     PgAdmin:
-        
+        docker run -d --name pdadmin -e PGADMIN_DEFAULT_EMAIL=admin@admin.com -e PGADMIN_DEFAULT_PASSWORD=root dpage/pgadmin4
