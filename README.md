@@ -389,3 +389,12 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ### Usefull command:
 
 ![Command for executing](image-14.png)
+    
+    1. docker exec -it pgadmin ping db // checks if we are able to communicate the container db or not
+
+        docker exec: allows us to execute command in a docker contain
+        -it: making use of interactive console
+        pgadmin: container name
+        ping db: executing Command
+
+        ping: It's a tool to check readability of a network whether a device connected to a network or not.
