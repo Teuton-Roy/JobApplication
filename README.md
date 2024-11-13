@@ -407,3 +407,27 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
         ping db: executing Command
 
         ping: It's a tool to check readability of a network whether a device connected to a network or not.
+
+## ```Start the PostgreSQL service:```
+
+    docker run -d \ [-d means run in detach mode]
+
+    --name postgres_container \ [postgres_container name of the container]
+
+    -e POSTGRES_USER=postgres \ [username: postgres]
+
+    -e POSTGRES_PASSWORD=root1234 \ [password: root1234]
+
+    -e PGDATA=/data/postgres \ [PGDATA: specify for data directory for postgresql]
+
+    -v postgres:/data/postgres \ [-v mount a docker volume named postgres, /data/postgres: this is the path within the container used to persist postgresql data]
+
+    -p 5432:5432 \ [port mapping for container port]
+
+    --network postgres \ [network name postgres]
+
+    --restart unless-stopped \ [autometically restared unless explisitly stopped]
+
+    postgres [docker image name]
+
+    this are the parameters we should use to run postgresql...
