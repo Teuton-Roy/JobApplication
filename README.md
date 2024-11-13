@@ -238,6 +238,9 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 ## Dockerfile:
     It's a file that contains instructions to build a docker image.
 
+## Docker network:
+    Docker networks allows a communication between multiple docker container.
+
 # Containerizing My SpringBoot Application
 
 ## Example Files
@@ -374,3 +377,4 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     jdbc:postgresql: means using PostgreSQL database
     localhost:5432: running on localhost at 5432 port which default for PostgreSQL
     jobapp: Database name
+
