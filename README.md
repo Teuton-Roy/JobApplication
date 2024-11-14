@@ -493,3 +493,10 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     volumes:
         postgres:
         pgadmin:
+
+#### ``` How to run .yaml file from command line: ```
+    run service: 
+        docker compose up
+
+    Single Service:
+        docker compose up <service_name>
