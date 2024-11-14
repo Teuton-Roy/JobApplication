@@ -546,3 +546,6 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
    ``` Here my Job Application which is in MicroService form ``` 
 
    ![Microservice form](image-17.png)
+
+    How these MicroService communication with each others?
+    =>  they communicate with each other with standard protocol like HTTP/HTTPs
