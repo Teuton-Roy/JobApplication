@@ -500,3 +500,24 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
     Single Service:
         docker compose up <service_name>
+
+
+# ``` MicroServices ```  
+    
+    Before MicroServices the application used to be built using Monolithic Architecture
+    and as the name suggest Monolithic Architecture is a unified model for a Software 
+    application,
+
+    Like a big container where all the functionalities of the application are interconnected
+    like we have user interface, business logic, data processing, database operations all of 
+    that packed into a Single unit.
+
+    When we creating a Monolithic application means essentially creating one large code base
+    for all different functions that our application performs.
+
+  ```Monolithic architechture is a design where all the components of an application are interconnected and interdependent  ```
+    
+  ``` Here my Job Application which is in Monolithic form ```
+![Monolithic form](image-15.png)
+    company --> Review --> Job everything is interlinked, also running on a single server.
+
