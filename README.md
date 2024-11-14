@@ -453,3 +453,43 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     --restart unless-stopped \
 
     dpage/pgadmin4
+
+## ``` docker-compose.yaml ```
+    services:
+        postgres:
+            container_name: postgres_container
+            image: postgres
+            environment:
+                POSTGRES USER: postgres
+                POSTGRES PASSWORD: root1234
+                PGDATA: /data/postgres
+            volumes:
+                - postgres:/data/postgres
+            ports:
+                - "5432:5432"
+            networks:
+                - postgres
+            restart: unless-stopped
+
+        pgadmin:
+            container_name: pgadmin_container
+            image: dpage/pgadmin4
+            environment:
+                PGADMIN_DEFAULT_EMAIL: ${PGADMIN_DEFAULT_EMAIL:-pgadmin4@pgadmin.org}
+                PGADMIN_DEFAULT_PASSWORD: ${PGADMIN_DEFAULT_PASSWORD:-root}
+                PGADMIN_CONFIG_SERVER_MODE: 'False'
+            volumes:
+                - pgadmin:/var/lib/pgadmin
+            ports:
+                - "5050:80"
+            networks:
+                - postgres
+            restart: unless-stopped
+
+    networks:
+        postgres:
+            driver: bridge
+
+    volumes:
+        postgres:
+        pgadmin:
