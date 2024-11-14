@@ -535,7 +535,7 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
 ## ``` What are MicroServices and Why do We need them ```
 
-   ``` MicroServices structures an application as a collection of small autonomous services.```
+   ```MicroServices structures an application as a collection of small autonomous services.```
 
     Means with MicroServices we can separate the componnets into different services and that all
     work together like a single application.
@@ -544,5 +544,5 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     that exist.
 
    ``` Here my Job Application which is in MicroService form ``` 
-   
+
    ![Microservice form](image-17.png)
