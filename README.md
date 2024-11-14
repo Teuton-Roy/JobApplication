@@ -515,9 +515,20 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
     When we creating a Monolithic application means essentially creating one large code base
     for all different functions that our application performs.
 
-  ```Monolithic architechture is a design where all the components of an application are interconnected and interdependent  ```
+  ```Monolithic architecture is a design where all the components of an application are interconnected and interdependent  ```
     
   ``` Here my Job Application which is in Monolithic form ```
+
 ![Monolithic form](image-15.png)
+
     company --> Review --> Job everything is interlinked, also running on a single server.
 
+#### ``` Problem with monolithic architecture ```
+    
+    Because of functions are interconnected with each other, if I want to update or modify a specific feature
+    then I need to redeploy the entire application so this can lead longer development cycles also deployment
+    cycle which can increase the time it takes to get the changes out to the user.
+
+  ``` Few other problems ```
+
+  ![Problems](image-16.png)
