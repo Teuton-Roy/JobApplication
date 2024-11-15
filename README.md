@@ -549,3 +549,16 @@ Response entity: Response entity is class in spring and it's a wrapper that repr
 
     How these MicroService communication with each others?
     =>  they communicate with each other with standard protocol like HTTP/HTTPs
+
+## ``` Principal Of MicroServices ```
+
+    1. Single resposibility: which says each MicroService should have one single job.
+
+    2. Independent: means each service should be able to perform independently without have any dependencies on other service.
+                    and any changes in one service should not impect other services
+    
+    3. Decentralization: Instead of having the entire application as one body, each services manage it's own database, own code-base
+                         and it's own data model.
+
+    4. Failure Isolation: In monolithic architecture if one component fails the entire application fails but when a MicroService fails
+                          it doesn't take entire system down.
